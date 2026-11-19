@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eddy Suratno – Japanese Cuisine Chef</title>
+<meta name="description" content="Portfolio of Eddy Suratno, hotel chef specialising in Japanese cuisine with over 25 years of kitchen experience.">
+<style>
+  :root {
+    --paper: #f6f7f5;
+    --ink: #17232b;
+    --muted: #5b6a72;
+    --indigo: #2f4b6e;
+    --wasabi: #6f8f2f;
+    --line: #d7dddb;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.6 "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  }
+  a { color: var(--indigo); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--wasabi); outline-offset: 3px; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.15; margin: 0; }
+  h2 { font-size: 1.9rem; margin-bottom: 28px; }
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+
+  /* Foto: kalau file foto belum ada, kotak abu-abu tetap tampil */
+  .ph { background: #dfe5e3; overflow: hidden; }
+  .ph img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  /* Hero */
+  .hero { padding: 56px 0 64px; border-top: 0; }
+  .hero .wrap { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: center; }
+  .hero h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); letter-spacing: -0.5px; }
+  .role { margin: 14px 0 20px; font-size: 1.2rem; color: var(--indigo); font-weight: 600; }
+  .lead { max-width: 52ch; color: var(--muted); margin: 0 0 28px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; border: 2px solid var(--indigo); }
+  .btn.primary { background: var(--indigo); color: #fff; }
+  .btn.ghost { color: var(--indigo); }
+  .portrait { aspect-ratio: 3/4; border-radius: 4px; }
+
+  /* Ringkasan angka */
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+  .facts strong { display: block; font: 700 1.6rem Georgia, serif; color: var(--indigo); }
+  .facts span { color: var(--muted); font-size: .95rem; }
+
+  /* Pengalaman */
+  .timeline { list-style: none; margin: 0; padding: 0 0 0 22px; border-left: 2px solid var(--line); }
+  .timeline li { position: relative; padding: 0 0 34px 8px; }
+  .timeline li::before { content: ""; position: absolute; left: -30px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 3px solid var(--indigo); }
+  .timeline li.now::before { background: var(--wasabi); border-color: var(--wasabi); }
+  .timeline h3 { font-size: 1.2rem; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 2px 0 8px; }
+  .timeline ul { margin: 0; padding-left: 18px; }
+  .timeline li li { padding: 0; }
+  .timeline li li::before { display: none; }
+
+  .earlier { margin-top: 8px; color: var(--muted); }
+  .earlier h3 { color: var(--ink); font-size: 1.1rem; margin-bottom: 10px; }
+  .earlier p { margin: 0 0 6px; }
+
+  /* Galeri */
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .gallery .ph { aspect-ratio: 4/5; border-radius: 4px; }
+
+  /* Dua kolom */
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .cols h3 { font-size: 1.2rem; margin-bottom: 12px; }
+  .cols ul { margin: 0; padding-left: 18px; }
+  .cols li { margin-bottom: 6px; }
+
+  footer { background: var(--indigo); color: #fff; padding: 56px 0; }
+  footer h2 { margin-bottom: 14px; }
+  footer a { color: #fff; }
+  footer p { margin: 4px 0; }
+
+  @media (max-width: 760px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .portrait { max-width: 260px; order: -1; }
+    .facts, .cols { grid-template-columns: 1fr; gap: 20px; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    section { padding: 48px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<!--
+  CARA PAKAI (buat Vitt):
+  1. Simpan file ini dalam satu folder, bikin folder "images" di sebelahnya.
+  2. Ganti foto: taruh file di folder images dengan nama yang sama seperti di bawah
+     (profile.jpg, dish-1.jpg sampai dish-6.jpg), atau ubah nama file di src="...".
+  3. Cari tulisan [GANTI: ...] dan isi dengan data terbaru dari bapak.
+  4. Buka file ini di browser buat lihat hasilnya.
+-->
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Eddy Suratno</h1>
+      <p class="role">Japanese Cuisine Chef &middot; Sous Chef / Chef de Partie</p>
+      <p class="lead">
+        Hotel chef with more than 25 years in professional kitchens, specialising in sushi,
+        sashimi and Japanese cooking. Experience in five-star hotels in Jakarta and in
+        Montenegro, leading kitchen teams, controlling stock and maintaining food safety.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Contact me</a>
+        <!-- GANTI: taruh file CV PDF di folder yang sama dengan nama cv-eddy-suratno.pdf -->
+        <a class="btn ghost" href="cv-eddy-suratno.pdf" download>Download CV (PDF)</a>
+      </div>
+    </div>
+    <div class="ph portrait">
+      <img src="ayah/eddy profil.png" alt="Chef Eddy Suratno in his kitchen whites" onerror="this.style.display='none'">
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="facts" style="grid-column:1/-1; width:100%">
+      <div><strong>25+ years</strong><span>in professional kitchens</span></div>
+      <div><strong>Jakarta &amp; Montenegro</strong><span>hotels and restaurants</span></div>
+      <div><strong>Japanese cuisine</strong><span>sushi, sashimi, tempura</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <ol class="timeline">
+
+      <li class="now">
+        <h3>[GANTI: Hotel name], Montenegro</h3>
+        <p class="meta">[GANTI: posisi] &middot; [GANTI: Month Year] – Present</p>
+        <ul>
+          <li>[GANTI: 3–4 kosong, job nya isi]</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Atria Hotel</h3>
+        <p class="meta">Chef de Partie &middot; 28 Sep 2025 – [blm di ganti]</p>
+        <ul>
+          <li>Prepared breakfast, lunch, dinner and à la carte service for the hotel restaurant</li>
+          <li>Created new menu items for promotions</li>
+          <li>Ordered supplies, controlled food stock and checked chiller temperatures</li>
+          <li>Supervised hygiene and sanitation checklists and daily kitchen operations</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>La Villa Boutique Hotel, Montenegro</h3>
+        <p class="meta">Sous Chef &middot; 29 Dec 2023 – 18 Sep 2025</p>
+        <ul>
+          <li>Supervised the kitchen team and took responsibility for all kitchen staff</li>
+          <li>Ordered supplies and controlled food stock for the restaurant</li>
+          <li>Person in charge of food safety, including hygiene and sanitation checklists</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Keraton at The Plaza, a Luxury Collection Hotel, Jakarta</h3>
+        <p class="meta">Chef de Partie &middot; 16 Feb 2017 – 20 May 2020</p>
+        <ul>
+          <li>Held full responsibility for all kitchen sections and supervised staff</li>
+          <li>Ordered supplies, controlled food stock and kept temperature checklists</li>
+          <li>Supported the Sous Chef in daily operations</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Aston Imperial Bekasi Hotel &amp; Conference Center</h3>
+        <p class="meta">Chef de Partie &middot; 28 Dec 2015 – 28 Jun 2016</p>
+        <ul>
+          <li>Ran all sections according to menu and recipe specifications</li>
+          <li>Controlled stock, ordering and staff; kept hygiene and food safety checklists</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Novotel Jakarta Mangga Dua Square</h3>
+        <p class="meta">Demi Chef de Partie &middot; 29 Jul 2013 – 4 Jul 2015</p>
+        <ul>
+          <li>Prepared banquet functions and à la carte menus</li>
+          <li>Led the section when the Chef de Partie and Sous Chef were away</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Le Grandeur Mangga Dua Hotel, Jakarta</h3>
+        <!-- GANTI: CV bilang Demi Chef, surat referensi bilang posisi terakhir Commis. Samakan dulu. -->
+        <p class="meta">Commis &middot; 2 Jan 2012 – 15 Apr 2013</p>
+        <ul>
+          <li>Cold kitchen: mise en place, sauces and dressings, salads, sushi and sashimi fillings</li>
+          <li>Prepared salad menus for banquets and kept chiller temperature records</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Blue Sky Pandurata Boutique Hotel, Jakarta</h3>
+        <!-- GANTI: CV bilang April 2011 – Juni 2012, surat referensi bilang 23 Jun – 27 Des 2011. Pakai tanggal surat. -->
+        <p class="meta">Chef de Partie &middot; 23 Jun 2011 – 27 Dec 2011</p>
+        <ul>
+          <li>Ran all sections, controlled food cost and stock, and supervised staff</li>
+          <li>Person in charge of food safety supervision</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Mandarin Oriental, Jakarta</h3>
+        <p class="meta">Demi Chef de Partie, Cinnamon restaurant &middot; 12 Apr 2010 – 15 Jul 2011</p>
+        <ul>
+          <li>Prepared sushi and sashimi for lunch and dinner service, plus banquet and à la carte menus</li>
+          <li>Nominated Colleague of the Month, December 2010</li>
+        </ul>
+      </li>
+
+      <li>
+        <h3>Novotel Jakarta Mangga Dua Square</h3>
+        <!-- GANTI: CV bilang Juni 2005 – April 2010, tapi surat referensi tertanggal Feb 2007. Cek tanggal akhirnya. -->
+        <p class="meta">Cook / Commis, cold kitchen &middot; Jun 2005 – [GANTI: end date]</p>
+        <ul>
+          <li>Cold kitchen production, salads, sauces and Japanese dishes (sushi, sashimi, tempura) for wedding functions</li>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="earlier">
+      <h3>Earlier career</h3>
+      <p><strong>Nikko Sushi, Medan</strong> – Sushi Chef, Dec 2003 – Dec 2004. Sushi and sashimi service, menu creation, ordering.</p>
+      <p><strong>Akasaka Mas, Jakarta</strong> – Sushi Cook, Jun 2002 – Nov 2003. Sushi and sashimi prepared in front of guests.</p>
+      <p><strong>Daisho, Jakarta</strong> – Butcher, Aug 1997 – Jul 2000.</p>
+    </div>
+  </div>
+</section>
+
+<section id="dishes">
+  <div class="wrap">
+    <h2>Selected dishes</h2>
+    <!-- GANTI: pakai hanya foto masakan buatan bapak sendiri, 6 foto terbaik -->
+    <div class="gallery">
+      <div class="ph"><img src="ayah/foto 1.png" alt="Assorted nigiri sushi" onerror="this.style.display='none'"></div>
+      <div class="ph"><img src="ayah/foto 2.jpeg" alt="Sashimi platter on ice" onerror="this.style.display='none'"></div>
+      <div class="ph"><img src="ayah/foto 3.jpeg" alt="Specialty roll with gold leaf" onerror="this.style.display='none'"></div>
+      <div class="ph"><img src="ayah/foto 4.png" alt="Tempura" onerror="this.style.display='none'"></div>
+      <div class="ph"><img src="ayah/foto 5.jpeg" alt="Maki rolls" onerror="this.style.display='none'"></div>
+      <div class="ph"><img src="ayah/foto 6.jpeg" alt="Sashimi with scallop" onerror="this.style.display='none'"></div>
+    </div>
+  </div>
+</section>
+
+<section id="recognition">
+  <div class="wrap cols">
+    <div>
+      <h3>Recognition</h3>
+      <ul>
+        <li>Colleague of the Month Nominee, Mandarin Oriental Jakarta, December 2010</li>
+        <li>Award of Appreciation, Novotel Mangga Dua Square, World of Accor Dinner, June 2006</li>
+      </ul>
+      <h3 style="margin-top:24px">References</h3>
+      <p>Employment reference letters from Keraton at The Plaza, Aston Imperial Bekasi, Novotel Mangga Dua, Le Grandeur, Blue Sky Pandurata, Mandarin Oriental and others are available on request.</p>
+    </div>
+    <div>
+      <h3>Skills</h3>
+      <ul>
+        <li>Japanese cuisine: sushi, sashimi, tempura</li>
+        <li>Cold kitchen, banquet and à la carte service</li>
+        <li>Menu development for promotions</li>
+        <li>Stock control and supplier ordering</li>
+        <li>Food safety, hygiene and sanitation supervision</li>
+        <li>Leading and training kitchen teams</li>
+      </ul>
+      <h3 style="margin-top:24px">Languages</h3>
+      <ul>
+        <li>Indonesian: native</li>
+        <li>English: working proficiency, spoken and written</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Open to Sous Chef and Chef de Partie positions.</p>
+    <!-- GANTI: email dan nomor WhatsApp. Alamat rumah, tanggal lahir, dan data pribadi lain sengaja tidak ditampilkan. -->
+    <p>Email: <a href="mailto:suratnoeddy77@gmail.com">suratnoeddy77@gmail.com</a></p>
+    <p>WhatsApp: [GANTI: +country code and number]</p>
+  </div>
+</footer>
+
+</body>
+</html>
